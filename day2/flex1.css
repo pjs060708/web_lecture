@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.wrapper{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    width: 600px;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.title{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+}
+.content{
+    width: 300px;
+    height: 200px;
+    background-color: blanchedalmond;
+}
