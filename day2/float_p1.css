@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+a {
+  font-size: 18px;
+  line-height: 20px;
+  color: #8492a6;
+  text-decoration: none;
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
+
+/* 
+1. 동그라미 표시 제거
+2. 각각의 아이템을 가로로 배치
+3. 양 옆에 여백(padding) 필요
+4. 아이템(li) 사이에 간격(margin) 필요
+5. 선택된 아이템의 경우에는 두께및 밑줄 추가
+-> class에 active라는 요소를 추가
+*/
+
+.tab-menu{
+  list-style-type: none;
+  padding-left: 0;
+  border-bottom: 1px solid #e5eaef;
+}
+
+.tab-menu::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.tab-menu-item{
+  float: left;
+  margin-right: 16px;
+}
+
+.tab-menu-item a{
+  padding: 16px 20px;
+}
+
+.tab-menu-item.active{
+  border-bottom: 2px solid rgb(120, 204, 253);
+}
+
+.tab-menu-item.active a{
+  font-size: 500;
+  color: rgb(120, 204, 253);
+}
