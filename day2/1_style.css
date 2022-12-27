@@ -1,0 +1,10 @@
+*{margin: 0;box-sizing: border-box;}
+body{color: #292929;}
+.parent{width: 600px;margin: 0 auto;background-color: #cecece;}
+.parent::after{content: "";clear: left;display: block;}
+.child{width: 200px;height: 200px;text-align: center;line-height: 200px;float: left;}
+.child::before{content: "Child ";}
+.child::after{content: " Box";}
+.red{background-color: rgb(231, 66, 66);}
+.yellow{background-color: rgb(231, 231, 62);}
+.blue{background-color: rgb(71, 71, 211);}
