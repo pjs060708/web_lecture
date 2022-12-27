@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    color: #212529;
+}
+
+.box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.box::after{
+    content: "세로화면(기본) Mobile";
+}
+
+@media screen and (min-width: 576px) {
+    .box{
+        background-color: wheat;
+    }
+    .box::after{
+        content: "가로화면 Mobile";
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .box{
+        background-color: greenyellow;
+    }
+    .box::after{
+        content: "Tablet";
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .box{
+        background-color: blue;
+    }
+    .box::after{
+        content: "Desktop";
+    }
+}
