@@ -25,6 +25,7 @@ body {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(6, minmax(100px, auto));
+    gap: 20px;
 }
 
 .ctnLeft {
@@ -35,6 +36,11 @@ body {
     display: grid;
     grid-template-rows: repeat(5, minmax(100px, auto));
     grid-template-columns: repeat(4, minmax(100px, auto));
+}
+
+.ctnWrap div{
+    border: 1px solid #000;
+    gap: 20px;
 }
 
 .c {
@@ -61,13 +67,21 @@ body {
 }
 
 .a {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.b {
     grid-row: 2/3;
     grid-column: 1/2;
 }
-.footer {
-    text-align: center;
+
+.footer{
     grid-row: 3/4;
     grid-column: 1/2;
+}
+
+.footer p {
+    text-align: center;
 }
 
 @media screen and (max-width: 767px){
