@@ -205,3 +205,76 @@
 // const converted = Array.from(objLikeArr);
 // console.log(objLikeArr);
 // console.log(converted);
+
+// const person = {
+//   eyes: 2,
+//   speak: () => {
+//     console.log("말말");
+//   },
+// };
+
+// // 화상표 함수
+// // 매개변수 => { 실행할 문장 }
+// const sum = (a, b) => a + b;
+
+// // 화살표 함수 어디에 쓰나
+// // 함수 내에 콜백할수로 건내줄때 많이 사용
+// const array1 = ["a", "b", "c"];
+
+// // 옛날에 표현: for문으로 출력 ↓
+// for (let index = 0; index < array1.length; index++) {
+//   const element = array1[index];
+//   console.log(element);
+// }
+
+// // 현재 표현: 향상된 for문으로 출력 ↓
+// array1.forEach((arrItem) => console.log(arrItem));
+
+// // arrow function의 단점
+// const student = {
+//   age: 17,
+//   sayAge: () => {
+//     console.log(this); // 자기 자신 참조 불가
+//     console.log(this.age);
+//   },
+// };
+
+// // 올바르도록 수정한 코드 ↓
+// const student = {
+//   age: 17,
+//   sayAge: function () {
+//     console.log(this);
+//     console.log(this.age);
+//   },
+// };
+
+// student.sayAge();
+
+// ["학생 a", "학생 b", "학생 c"] => map() vs forEach)()
+
+// // arrow function의 장점 ↓
+// // 화살표 함수를 사용 안했을때
+// const students = array1.map((name) => {
+//   // name이 아닌 숫자로 하였을때는 산술 연산자가 들어간다
+//   return "학생" + name;
+// });
+// // 화살표 함수를 사용했을때
+// const students = array1.map((name) => "학생" + name);
+
+// console.log(students);
+
+// function temp() {
+//   return 1 + 2;
+// }
+
+// console.log(tamp(1, 2, 3, 4, 5));
+
+// // 추가 문제
+// // 1000 초가하는 숫자 뒤에 원을 붙여 출력하기(2줄로 가능 #나중에 추가적인 공부를 해서 2줄로 줄이도록 도전)
+// const price = ["2000", "1000", "3000", "5000", "4000"];
+// for (let index = 0; index < price.length; index++) {
+//   const element = price[index];
+//   if (element > 1000) {
+//     console.log(`${element}원`);
+//   }
+// }
