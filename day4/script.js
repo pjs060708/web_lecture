@@ -270,7 +270,44 @@
 // console.log(tamp(1, 2, 3, 4, 5));
 
 // // 추가 문제
-// // 1000 초가하는 숫자 뒤에 원을 붙여 출력하기(2줄로 가능 #나중에 추가적인 공부를 해서 2줄로 줄이도록 도전)
+// // 선생님의 풀이
+// const price = ["2000", "1000", "3000", "5000", "4000"];
+
+// function getWonPrice(pricelist) {
+//   return pricelist
+//     .filter((item) => Number(item) > 1000)
+//     .sort((a, b) => a - b)
+//     .map((item) => item + "원");
+// }
+// function getWonPrice(pricelist) {
+//   //   const temp = [];
+//   //   for (let i = 0; i < pricelist.length; i++) {
+//   //     if (Number(pricelist[i]) > 1000) {
+//   //       temp.push(pricelist[i] + "원");
+//   //     }
+//   //   }
+//   //   return temp;
+//   const isOverThousand = pricelist.filter(
+//     (
+//       item /*{
+//     if (Number(item) > 1000) {
+//       return True;
+//     } else {
+//       return False;
+//     }
+//     return Number(item) > 1000;
+//   }*/
+//     ) => Number(item) > 1000
+//   );
+//   //   return Number(item) > 1000;
+//   //   isOverThousand.sort();
+//   //   return isOverThousand.map((item) => item + "원");
+// }
+
+// const result = getWonPrice(price);
+// console.log(result);
+
+// // 나의 풀이 ↓
 // const price = ["2000", "1000", "3000", "5000", "4000"];
 // for (let index = 0; index < price.length; index++) {
 //   const element = price[index];
