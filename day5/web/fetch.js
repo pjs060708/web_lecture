@@ -13,3 +13,9 @@
 // })
 //   .catch((err) => alert("에러를 처리하였습니다. 정상적으로 다시 실행합니다."))
 //   .then(() => alert("다음 핸들러로 넘어왔습니다."));
+
+fetch("http://localhost:3000/userInfo")
+  .then((res) => {
+    res.json();
+  })
+  .then((data) => console.log(data));
